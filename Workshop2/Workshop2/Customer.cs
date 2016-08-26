@@ -11,13 +11,14 @@ namespace Workshop2
         private string name;
         private string address;
         private string passportNo;
-        private DateTime dateOfBirth;
+        private DateTime dob;
+        private int age;
 
         public  Customer(string name,string address,string passportNo,DateTime dob)
         {
             this.name = name;
             this.address = address;
-            this.dateOfBirth = dob;
+            SetAge(dob);
             this.passportNo = passportNo;
         }
         public string GetName()
@@ -36,13 +37,17 @@ namespace Workshop2
         {
             this.address = address;
         }
-        public DateTime GetDateOfBirth()
-        {
-            return dateOfBirth;
+        public int GetAge()
+        {            
+
+            return age;
         }
-        public void SetDateOfBirth(DateTime dob)
+        public void SetAge(DateTime dob)
+            
         {
-            this.dateOfBirth = dob;
+            int  thisYear= DateTime.Now.Year;
+            
+            this.age = thisYear-dob.Year;
        
         }
 

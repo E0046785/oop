@@ -89,8 +89,11 @@ namespace Workshop2
             Customer Z = new Customer("kim Lee Keng", "2,Rich view", "XXX9F", new DateTime(1993, 10, 11));
             BankAccount a = new BankAccount("001-001-001",y, 2000);
             BankAccount b = new BankAccount("001-001-002",Z, 5000);
-
+            
             Console.WriteLine(a.Show());
+            Console.WriteLine(y.GetAge());
+            Console.WriteLine(Z.GetAge());
+
             Console.WriteLine(b.Show());
             a.Deposit(100);
             Console.WriteLine(a.Show());
