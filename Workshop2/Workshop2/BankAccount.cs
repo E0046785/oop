@@ -85,7 +85,7 @@ namespace Workshop2
         {
             //BankAccount a = new BankAccount("001-001-001",, 2000);
             //BankAccount b = new BankAccount("001-001-002", "Kim Keng Lee", 5000);
-            Customer y = new Customer("Tan Ah Kow","20,Seaside Road","XXX20",new DateTime(1998,10,11));
+            Customer y = new Customer("Tan Ah Kow","20,Seaside Road","XXX20",new DateTime(1989,10,11));
             Customer Z = new Customer("kim Lee Keng", "2,Rich view", "XXX9F", new DateTime(1993, 10, 11));
             BankAccount a = new BankAccount("001-001-001",y, 2000);
             BankAccount b = new BankAccount("001-001-002",Z, 5000);
