@@ -48,10 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnotherBankAccount.cs" />
+    <Compile Include="App.cs" />
     <Compile Include="BankAccount.cs" />
+    <Compile Include="BankAccount2.cs" />
+    <Compile Include="BankAccount_3.cs" />
+    <Compile Include="BankTest.cs" />
     <Compile Include="Coin.cs" />
+    <Compile Include="CurrentAccount.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Die.cs" />
+    <Compile Include="OverdraftAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

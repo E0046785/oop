@@ -91,8 +91,8 @@ namespace Workshop2
             BankAccount b = new BankAccount("001-001-002",Z, 5000);
             
             Console.WriteLine(a.Show());
-            Console.WriteLine(y.GetAge());
-            Console.WriteLine(Z.GetAge());
+            Console.WriteLine(y.Age);
+            Console.WriteLine(Z.Age);
 
             Console.WriteLine(b.Show());
             a.Deposit(100);
