@@ -70,19 +70,33 @@ namespace Workshop2
 			  return balance;
 			}
 		}
-		public bool Withdraw(double amount)
-		{
-		    if(amount < balance )
-			{
-				balance = balance-amount;
-				return true;
-			}
-			else
-			{
-			 Console.Error.WriteLine("Withdrawl for {0} is unsuccessful",AccountHolder);
-			 return false;
-			}
-		}
+        //public bool Withdraw(double amount)
+        //{
+        //    if(amount < balance )
+        //    {
+        //        balance = balance-amount;
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //     Console.Error.WriteLine("Withdrawl for {0} is unsuccessful",AccountHolder);
+        //     return false;
+        //    }
+        //}
+
+        public virtual bool Withdraw(double amount)
+        {
+            if (amount < balance)
+            {
+                balance = balance - amount;
+                return true;
+            }
+            else
+            {
+                Console.Error.WriteLine("Withdrawl for {0} is unsuccessful", AccountHolder);
+                return false;
+            }
+        }
 		public void Deposit(double amount)
 		{
 			balance = balance + amount;
@@ -111,10 +125,16 @@ namespace Workshop2
         }
 
 
-        public string Show()
+        //public string Show()
+        //{
+        //    string customerInfo = String.Format
+        //                         ("[Account Number={0},Account Holder={1},Balance={2}]", AccountNumber, AccountHolder, Balance);
+        //    return customerInfo;
+        //}
+        public override string ToString()
         {
             string customerInfo = String.Format
-                                 ("[Account Number={0},Account Holder={1},Balance={2}]", AccountNumber,AccountHolder,Balance);
+                                 ("{0}\t{1}\t{2}\t", AccountNumber, AccountHolder, Balance);
             return customerInfo;
         }
     }

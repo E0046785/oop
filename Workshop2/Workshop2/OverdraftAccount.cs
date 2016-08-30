@@ -15,11 +15,17 @@ namespace Workshop2
       {
 
       }
-      public new bool Withdraw(double amount)
+      //public new bool Withdraw(double amount)
+      //{
+      //    balance = balance - amount;
+      //    return true;
+          
+      //}
+      public override bool Withdraw(double amount)
       {
           balance = balance - amount;
           return true;
-          
+
       }
       public new double CalculateInterest()
       {
@@ -27,10 +33,16 @@ namespace Workshop2
       }
 
 
-      public string Show()
+      //public string Show()
+      //{
+      //    string customerInfo = String.Format
+      //                         ("[OverdraftAccount:={0},Account Holder={1},Balance={2}]", AccountNumber, AccountHolder, Balance);
+      //    return customerInfo;
+      //}
+      public override string ToString()
       {
           string customerInfo = String.Format
-                               ("[OverdraftAccount:={0},Account Holder={1},Balance={2}]", AccountNumber, AccountHolder, Balance);
+                               ("{0}\t{1}\t{2}\t", AccountNumber, AccountHolder, Balance);
           return customerInfo;
       }
 

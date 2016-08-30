@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Workshop2
 {
-    class BankTest
+    class BankTest1
     {
         static void Main(string[] args)
         {
@@ -31,12 +31,12 @@ namespace Workshop2
             BankAccount_3 bankAcc2 = new BankAccount_3("001-001-001", cust2, 5000);
 
             bankAcc1.Deposit(500);
-            Console.WriteLine(bankAcc1.Show());
+          //  Console.WriteLine(bankAcc1.Show());
             bankAcc1.Withdraw(200);
-            Console.WriteLine(bankAcc1.Show());
+            //Console.WriteLine(bankAcc1.Show());
             bankAcc1.Transfer(300, bankAcc2);
-            Console.WriteLine(bankAcc1.Show());
-            Console.WriteLine(bankAcc2.Show());
+            //Console.WriteLine(bankAcc1.Show());
+            //Console.WriteLine(bankAcc2.Show());
         }
     }
 }

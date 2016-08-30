@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Workshop2.BankTest</StartupObject>
+    <StartupObject>Workshop2.BankBranch.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ISS.RV.LIB">
@@ -48,10 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnotherBankAccount.cs" />
-    <Compile Include="App.cs" />
     <Compile Include="BankAccount.cs" />
     <Compile Include="BankAccount2.cs" />
     <Compile Include="BankAccount_3.cs" />
+    <Compile Include="BankBranch.cs" />
     <Compile Include="BankTest.cs" />
     <Compile Include="Coin.cs" />
     <Compile Include="CurrentAccount.cs" />

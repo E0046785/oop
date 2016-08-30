@@ -23,5 +23,11 @@ namespace Workshop2
                                  ("[Account Number={0},Account Holder={1},Balance={2}]", AccountNumber, AccountHolder, Balance);
             return customerInfo;
         }
+        public override string ToString()
+        {
+            string customerInfo = String.Format
+                                 ("{0}\t{1}\t{2}\t", AccountNumber, AccountHolder, Balance);
+            return customerInfo;
+        }
     }
 }
